@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!-- caracteres brasileiros-->
+		<style>
+			body{
+				font-family: arial;
+                background-color:gray;
+			}
+            #titulo{
+            	color:white;
+                text-align:center;
+                font-size:26px;
+                font-weight: bold;
+            }
+			#result{
+				height: 30px;
+				border: 2px inset white;
+				border-radius:10px;
+				padding: 3px 10px 10px 10px;
+                margin-bottom: 30px;
+				font-size: 14px;
+				line-height: 20px;
+                background-color:white;
+			}
+			#fala{
+				font-size: 20px;
+				position: absolute;
+				top: 230px;
+				left: 50%;
+				border-radius:5px;
+			}
+            #led{
+            	font-size: 20px;
+				position: absolute;
+				top: 230px;
+				left: 40%;
+				border-radius:5px;
+            }
+            #portas{
+            	height: 25px;
+   				width: 100px;
+                border: 2px inset white;
+            }
+            #conectar{
+            	font-size: 20px;
+				position: absolute;
+				top: 240px;
+				left: 16%;
+				border-radius:5px;
+            }
+		</style>
+	</head>
+	<body>
+		<p id="titulo">Reconhecimento de fala</p>
+		<button id="led">Led</button>
+		<svg height="100" width="100">
+			<circle  id="circulo"  cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="purple" />
+		</svg>
+		<div id="result"></div>
+		<button id="fala">Falar</button>
+       	<select id="portas">Escolha a porta</select>
+		<div id="buffer"></div>
+        <button id="conectar">Conectar</button>
+		<script src="main.js"></script>
+	</body>
+</html>

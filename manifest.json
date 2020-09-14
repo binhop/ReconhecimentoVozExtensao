@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  
+  "name": "SoluçaoExtensão",
+  "description": "Tem o objetivo de automatizar tarefas por comando de voz interagindo com o arduino.",
+  "version": "1.0.0",
+  
+  "permissions": ["serial", "audioCapture"],
+  "icons": {
+    "128": "icone.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+}
